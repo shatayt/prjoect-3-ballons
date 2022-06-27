@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* line 1, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 7, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+html {
+  font-size: 10px;
+}
+
+/* line 9, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+body {
+  padding: 5rem;
+  background-color: white;
+  font-family: Roboto, sans-serif;
+  color: #777777;
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+
+/* line 17, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+.container {
+  background-color: #f7f7f7;
+}
+
+/* line 20, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+.header {
+  position: relative;
+  height: 95vh;
+  background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/header-background.jpg) center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+/* line 25, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+.header__logo {
+  height: 7rem;
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+}
+
+/* line 30, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+.header__box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+/* line 39, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+.title-first__main {
+  animation: lefttoright 3s ease 1s;
+  animation-fill-mode: backwards;
+  backface-visibility: hidden;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 8rem;
+  font-size: 5rem;
+  line-height: 6rem;
+  letter-spacing: 1rem;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+
+/* line 51, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+.title-first__secondary {
+  animation: righttoleft 3s ease 1s;
+  animation-fill-mode: backwards;
+  backface-visibility: hidden;
+  display: block;
+  font-weight: 100;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: 0.5rem;
+  color: #FFFFFF;
+  margin-bottom: 5rem;
+}
+
+@keyframes lefttoright {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes righttoleft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes btntoup {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+/* line 86, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+.btn:link, .btn:visited {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  color: #777777;
+  background-color: white;
+  border-radius: 5rem;
+  display: inline-block;
+  transition: all .2s;
+  font-size: 2rem;
+}
+
+/* line 97, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+.btn:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* line 100, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+.btn:hover::after {
+  opacity: 0;
+  transform: scale(1.5, 1.7);
+}
+
+/* line 103, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+.btn:active {
+  transform: translateY(-0.2rem);
+}
+
+/* line 105, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+.btn::after {
+  content: "";
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 5rem;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+/* line 117, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+.btn_animated {
+  animation: btntoup 3s ease-out 1s;
+  animation-fill-mode: backwards;
+  backface-visibility: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
