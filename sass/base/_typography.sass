@@ -1,0 +1,60 @@
+body
+    font-family: Roboto, sans-serif
+    color: $color-gray
+    font-weight: 400
+    font-size: 1.6rem
+    letter-spacing: 0.2rem
+
+.title-first
+    &__main
+        animation: lefttoright 3s ease 1s
+        animation-fill-mode: backwards
+        backface-visibility: hidden
+        text-transform: uppercase
+        display: block
+        font-weight: 8rem
+        font-size: 5rem
+        line-height: 6rem
+        letter-spacing: 1rem
+        color: $color-white
+        margin-bottom: 1rem
+    &__secondary
+        animation: righttoleft 3s ease 1s
+        animation-fill-mode: backwards
+        backface-visibility: hidden
+        display: block
+        font-weight: 100
+        font-size: 4rem
+        line-height: 4.8rem
+        letter-spacing: 0.5rem
+        color: $color-white
+        margin-bottom: 5rem
+
+.title-secondary
+    text-align: center
+    font-size: 3.6rem
+    letter-spacing: 1rem
+    text-transform: uppercase
+    font-weight: 800
+    background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-brown-dark, 0.7) 99.94%)
+    -webkit-background-clip: text
+    color: transparent
+    transition: all .4s
+    backface-visibility: hidden
+    &:hover
+        transform: skewY(2deg) skewX(15deg) scale(1.1)
+        text-shadow: 0rem .4rem .4rem rgba($color-black, .25)
+    &_white
+        color: white
+    
+.title-third
+    font-size: 2rem
+    letter-spacing: .2rem
+    text-transform: uppercase
+    font-weight: 700
+.paragraph
+    font-size: 1.6rem
+    letter-spacing: .2rem
+    line-height: 140%
+    font-weight: 400
+

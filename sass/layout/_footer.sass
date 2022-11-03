@@ -1,0 +1,29 @@
+.footer
+    
+    &__content
+        padding: 8rem 0 8rem 0
+        text-align: center
+        height: 38rem
+        background: #333333
+    &__logo
+        width: 12rem
+        height: 15rem
+    &__menu
+        ul
+            li
+                display: inline-block
+                font-size: 1.6rem
+                letter-spacing: .2rem
+                color: $color-white
+                font-weight: 300
+                transition: .5s transform, text-shadow, color
+                cursor: pointer
+                animation-fill-mode: backwards
+                &:not(:last-child)
+                    margin-right: 5rem 
+                &:hover
+                    transform: translateY(-1.5rem) scale(1.2)
+                    color: $color-brown-dark
+                    text-shadow: 0rem 3rem .2rem rgba($color-brown-light, 0.8)
+                &::shadow
+                    transform: rotate(180deg)

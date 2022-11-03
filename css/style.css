@@ -1,87 +1,4 @@
 @charset "UTF-8";
-/* line 1, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
-*, ::after, ::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* line 7, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
-html {
-  font-size: 10px;
-}
-
-/* line 9, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
-body {
-  padding: 5rem;
-  background-color: white;
-  font-family: Roboto, sans-serif;
-  color: #777777;
-  font-weight: 400;
-  font-size: 1.6rem;
-  letter-spacing: 0.2rem;
-}
-
-/* line 17, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
-.container {
-  background-color: #f7f7f7;
-}
-
-/* line 20, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
-.header {
-  position: relative;
-  height: 95vh;
-  background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/header-background.jpg) center/cover no-repeat;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-}
-
-/* line 25, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
-.header__logo {
-  height: 7rem;
-  position: absolute;
-  top: 5rem;
-  left: 5rem;
-}
-
-/* line 30, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
-.header__box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-}
-
-/* line 39, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
-.title-first__main {
-  animation: lefttoright 3s ease 1s;
-  animation-fill-mode: backwards;
-  backface-visibility: hidden;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 8rem;
-  font-size: 5rem;
-  line-height: 6rem;
-  letter-spacing: 1rem;
-  color: #FFFFFF;
-  margin-bottom: 1rem;
-}
-
-/* line 51, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
-.title-first__secondary {
-  animation: righttoleft 3s ease 1s;
-  animation-fill-mode: backwards;
-  backface-visibility: hidden;
-  display: block;
-  font-weight: 100;
-  font-size: 4rem;
-  line-height: 4.8rem;
-  letter-spacing: 0.5rem;
-  color: #FFFFFF;
-  margin-bottom: 5rem;
-}
-
 @keyframes lefttoright {
   0% {
     opacity: 0;
@@ -115,38 +32,173 @@ body {
   }
 }
 
-/* line 86, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
-.btn:link, .btn:visited {
-  position: relative;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  color: #777777;
-  background-color: white;
-  border-radius: 5rem;
-  display: inline-block;
-  transition: all .2s;
-  font-size: 2rem;
+/* line 1, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_base.sass */
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* line 97, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+/* line 7, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_base.sass */
+html {
+  font-size: 10px;
+}
+
+/* line 9, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_base.sass */
+body {
+  padding: 5rem;
+  background-color: white;
+}
+
+/* line 12, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_base.sass */
+.container {
+  background-color: #f7f7f7;
+  position: relative;
+  z-index: 0;
+}
+
+/* line 1, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_typography.sass */
+body {
+  font-family: Roboto, sans-serif;
+  color: #777777;
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+
+/* line 9, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_typography.sass */
+.title-first__main {
+  animation: lefttoright 3s ease 1s;
+  animation-fill-mode: backwards;
+  backface-visibility: hidden;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 8rem;
+  font-size: 5rem;
+  line-height: 6rem;
+  letter-spacing: 1rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* line 21, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_typography.sass */
+.title-first__secondary {
+  animation: righttoleft 3s ease 1s;
+  animation-fill-mode: backwards;
+  backface-visibility: hidden;
+  display: block;
+  font-weight: 100;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: 0.5rem;
+  color: #ffffff;
+  margin-bottom: 5rem;
+}
+
+/* line 33, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_typography.sass */
+.title-secondary {
+  text-align: center;
+  font-size: 3.6rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .4s;
+  backface-visibility: hidden;
+}
+
+/* line 44, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_typography.sass */
+.title-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+/* line 47, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_typography.sass */
+.title-secondary_white {
+  color: white;
+}
+
+/* line 50, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_typography.sass */
+.title-third {
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* line 55, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_typography.sass */
+.paragraph {
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
+  line-height: 140%;
+  font-weight: 400;
+}
+
+/* line 1, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_utilities.sass */
+.margin-bottom-80px {
+  margin-bottom: 8rem;
+}
+
+/* line 4, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_utilities.sass */
+.margin-bottom-10px {
+  margin-bottom: 1rem;
+}
+
+/* line 7, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_utilities.sass */
+.margin-bottom-30px {
+  margin-bottom: 3rem;
+}
+
+/* line 10, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_utilities.sass */
+.margin-bottom-50px {
+  margin-bottom: 5rem;
+}
+
+/* line 13, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_utilities.sass */
+.margin-bottom-25px {
+  margin-bottom: 2.5rem;
+}
+
+/* line 16, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/base/_utilities.sass */
+.text-align-center {
+  text-align: center;
+}
+
+/* line 2, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_button.sass */
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #777777;
+  position: relative;
+  padding: 1.5rem 4rem;
+  background-color: #ffffff;
+  border-radius: 5rem;
+  transition: all .2s;
+  font-size: 2rem;
+  border: none;
+}
+
+/* line 11, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_button.sass */
 .btn:hover {
   transform: translateY(-0.4rem);
   box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-/* line 100, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+/* line 14, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_button.sass */
 .btn:hover::after {
   opacity: 0;
   transform: scale(1.5, 1.7);
 }
 
-/* line 103, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+/* line 17, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_button.sass */
 .btn:active {
   transform: translateY(-0.2rem);
 }
 
-/* line 105, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+/* line 19, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_button.sass */
 .btn::after {
   content: "";
   background-color: white;
@@ -161,11 +213,627 @@ body {
   transition: all .4s;
 }
 
-/* line 117, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/style.sass */
+/* line 31, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_button.sass */
 .btn_animated {
   animation: btntoup 3s ease-out 1s;
   animation-fill-mode: backwards;
   backface-visibility: hidden;
+}
+
+/* line 36, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_button.sass */
+.btn_brown, .btn_brown:link, .btn_brown:visited {
+  background: #a14f03;
+  color: #ffffff;
+}
+
+/* line 40, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_button.sass */
+.btn_brown::after {
+  background: #a14f03;
+}
+
+/* line 2, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_button-text.sass */
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
+  font-weight: 700;
+  color: #a14f03;
+  text-decoration: none;
+  padding: 1rem;
+  border-bottom: 0.1rem #a14f03 solid;
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+/* line 12, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_button-text.sass */
+.btn-text:hover {
+  background-color: #a14f03;
+  color: #ffffff;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-1rem);
+}
+
+/* line 17, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_button-text.sass */
+.btn-text:active {
+  transform: translateY(0);
+}
+
+/* line 1, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_composition.sass */
+.composition {
+  position: relative;
+}
+
+/* line 4, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_composition.sass */
+.composition__photo {
+  width: 55%;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: .5rem;
+  position: absolute;
+  z-index: 1;
+  transition: 0.2s all;
+  outline-offset: 1rem;
+}
+
+/* line 12, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_composition.sass */
+.composition__photo_n1 {
+  top: 0rem;
+  left: 0rem;
+}
+
+/* line 15, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_composition.sass */
+.composition__photo_n2 {
+  top: 2rem;
+  right: 0rem;
+}
+
+/* line 18, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_composition.sass */
+.composition__photo_n3 {
+  top: 13rem;
+  left: 10rem;
+}
+
+/* line 21, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_composition.sass */
+.composition__photo:hover {
+  outline: 0.5rem solid #ba8554;
+  transform: scale(1.1);
+  z-index: 20;
+  cursor: default;
+}
+
+/* line 27, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_composition.sass */
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.95);
+}
+
+/* line 1, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_adventure-card.sass */
+.adventure-card {
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: all .3s;
+}
+
+/* line 8, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_adventure-card.sass */
+.adventure-card__item {
+  font-size: 6rem;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+/* line 14, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_adventure-card.sass */
+.adventure-card:hover {
+  transform: translateY(-1.5rem) scale(1.05);
+}
+
+/* line 1, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour {
+  position: relative;
+  height: 52rem;
+  width: 34rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+}
+
+/* line 7, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__side {
+  height: 52rem;
+  width: 34rem;
+  transition: .7s all ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+/* line 19, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__side_back {
+  background: linear-gradient(120deg, #ba8554, #a14f03);
+  transform: rotateY(180deg);
+}
+
+/* line 22, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour:hover .card-tour__side_front {
+  transform: rotateY(-180deg);
+}
+
+/* line 24, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour:hover .card-tour__side_back {
+  transform: rotateY(0deg);
+}
+
+/* line 26, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__img {
+  background-blend-mode: hard-light;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  height: 21rem;
+}
+
+/* line 30, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__img_1 {
+  background: #ba8554 url(../img/tour-img-1.png) center/cover no-repeat;
+}
+
+/* line 32, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__img_2 {
+  background: #ba8554 url(../img/tour-img-2.png) center/cover no-repeat;
+}
+
+/* line 34, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__img_3 {
+  background: #ba8554 url(../img/tour-img-3.png) center/cover no-repeat;
+}
+
+/* line 36, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__title {
+  color: #ffffff;
+  font-size: 2.8rem;
+  letter-spacing: .2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  position: absolute;
+  top: 17rem;
+  right: 0rem;
+}
+
+/* line 46, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__span {
+  background: linear-gradient(90deg, #ba8554, #a14f03);
+  padding: 1rem 2rem .3rem 2rem;
+}
+
+/* line 50, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__span_2 {
+  position: absolute;
+  top: 3.4rem;
+  right: 0;
+  padding-bottom: 1rem;
+}
+
+/* line 56, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__descrp ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+}
+
+/* line 61, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__descrp ul li {
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
+  color: #777777;
+  border-bottom: 1px solid #777777;
+  display: inline-block;
+}
+
+/* line 67, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__descrp ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+/* line 70, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__backside-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 75, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__text {
+  margin-bottom: 8rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 81, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__text_1 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+/* line 84, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_tour-card.sass */
+.card-tour__text_2 {
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+/* line 1, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_feedback-card.sass */
+.feedback-card {
+  width: 85%;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  padding: 5rem 3rem 7rem 3rem;
+  transform: skewX(-25deg);
+}
+
+/* line 10, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_feedback-card.sass */
+.feedback-card > * {
+  transform: skewX(25deg);
+}
+
+/* line 12, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_feedback-card.sass */
+.feedback-card__img {
+  width: 17rem;
+  height: 17rem;
+  background: green;
+  float: left;
+  border-radius: 100rem;
+  shape-outside: circle(50% at 50% 50%);
+  margin-right: 4rem;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 22, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_feedback-card.sass */
+.feedback-card__img img {
+  height: 100%;
+  transform: scale(1.2);
+  transition: all .5s;
+}
+
+/* line 26, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_feedback-card.sass */
+.feedback-card__name {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  font-weight: 400;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  opacity: 0;
+  transition: all .5s;
+}
+
+/* line 38, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_feedback-card.sass */
+.feedback-card:hover .feedback-card__name {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+/* line 41, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_feedback-card.sass */
+.feedback-card:hover img {
+  transform: scale(1);
+  filter: blur(0.3rem) brightness(70%);
+}
+
+/* line 1, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_bg-video.sass */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+
+/* line 9, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_bg-video.sass */
+.bg-gradient {
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(0, 0, 0, 0.7));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* line 1, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.book {
+  height: 50rem;
+  background: linear-gradient(115deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 57%, rgba(186, 133, 84, 0.9) 57%, rgba(0, 0, 0, 0.9) 100%), url(../img/last.jpg) center/cover no-repeat;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+/* line 8, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.form {
+  width: 60%;
+  padding: 5rem 0 0 5rem;
+}
+
+/* line 11, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.form__group:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+/* line 13, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.form__group:nth-child(4) {
+  margin-bottom: 4rem;
+}
+
+/* line 17, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.form__input {
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
+  font-weight: 400;
+  color: #000000;
+  padding: 2rem 0rem 2rem 2rem;
+  background: #ffffff;
+  border: none;
+  border-bottom: .3rem solid transparent;
+  border-radius: .5rem;
+  width: 70%;
+  transition: .4s all;
+}
+
+/* line 29, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.form__input:focus {
+  outline: none;
+  border-bottom: .3rem solid green;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* line 33, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.form__input:focus:invalid {
+  border-bottom: .3rem solid red;
+}
+
+/* line 36, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.form__label {
+  transition: .4s all;
+  display: block;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+
+/* line 41, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: none;
+  transform: translateY(-3rem);
+}
+
+/* line 46, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.form__group-radio {
+  width: 35%;
+  display: inline-block;
+}
+
+/* line 49, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.form__group-radio:last-child {
+  width: 45%;
+}
+
+/* line 52, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.form__input-radio {
+  display: none;
+}
+
+/* line 55, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.form__label-radio {
+  cursor: pointer;
+  position: relative;
+  padding-left: 4rem;
+}
+
+/* line 59, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.form__button-radio {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 0.5rem solid #a14f03;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -.4rem;
+}
+
+/* line 68, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.form__button-radio::after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #a14f03;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.2s all;
+}
+
+/* line 81, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/components/_form.sass */
+.form__input-radio:checked ~ .form__label-radio .form__button-radio::after {
+  opacity: 1;
+}
+
+/* line 1, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_header.sass */
+.header {
+  position: relative;
+  height: 95vh;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/header-background.jpg) center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+/* line 6, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_header.sass */
+.header__logo {
+  height: 7rem;
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+}
+
+/* line 11, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_header.sass */
+.header__logo:hover {
+  cursor: default;
+}
+
+/* line 13, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_header.sass */
+.header__box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+/* line 1, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_grid.sass */
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+/* line 4, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_grid.sass */
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+/* line 8, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/abstracts/_mixins.sass */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 8, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_grid.sass */
+.col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+
+/* line 11, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_grid.sass */
+.col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+
+/* line 13, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_grid.sass */
+.col-2-of-3 {
+  width: calc(((100% - 2 * 6rem) / 3)*2 + 6rem);
+}
+
+/* line 16, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_grid.sass */
+.col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+}
+
+/* line 18, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_grid.sass */
+.col-2-of-4 {
+  width: calc(((100% - 3 * 6rem) / 4)*2 + 6rem);
+}
+
+/* line 20, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_grid.sass */
+.col-3-of-4 {
+  width: calc(((100% - 3 * 6rem) / 4)*3 + 2*6rem);
+}
+
+/* line 24, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_grid.sass */
+[class^="col-"] {
+  float: left;
+}
+
+/* line 26, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_grid.sass */
+[class^="col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+/* line 3, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_footer.sass */
+.footer__content {
+  padding: 8rem 0 8rem 0;
+  text-align: center;
+  height: 38rem;
+  background: #333333;
+}
+
+/* line 8, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_footer.sass */
+.footer__logo {
+  width: 12rem;
+  height: 15rem;
+}
+
+/* line 13, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_footer.sass */
+.footer__menu ul li {
+  display: inline-block;
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
+  color: #ffffff;
+  font-weight: 300;
+  transition: .5s transform, text-shadow, color;
+  cursor: pointer;
+  animation-fill-mode: backwards;
+}
+
+/* line 22, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_footer.sass */
+.footer__menu ul li:not(:last-child) {
+  margin-right: 5rem;
+}
+
+/* line 24, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_footer.sass */
+.footer__menu ul li:hover {
+  transform: translateY(-1.5rem) scale(1.2);
+  color: #a14f03;
+  text-shadow: 0rem 3rem 0.2rem rgba(186, 133, 84, 0.8);
+}
+
+/* line 28, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/layout/_footer.sass */
+.footer__menu ul li::shadow {
+  transform: rotate(180deg);
+}
+
+/* line 1, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/pages/_home.sass */
+.section-about {
+  padding-top: 8rem;
+}
+
+/* line 3, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/pages/_home.sass */
+.section-adventure {
+  padding: 21rem 0;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/adventure-background.png) center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+}
+
+/* line 8, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/pages/_home.sass */
+.section-tour {
+  padding-top: 8rem;
+}
+
+/* line 11, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/pages/_home.sass */
+.section-feedback {
+  position: relative;
+  padding: 8rem 0;
+}
+
+/* line 15, C:/Users/Test-RR/Desktop/Project #3 baloons (Обучение второе Шары)/sass/pages/_home.sass */
+.section-book {
+  padding: 10rem;
+  background: linear-gradient(90deg, #ba8554, #a14f03);
 }
 
 /*# sourceMappingURL=style.css.map */
